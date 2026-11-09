@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "2e1e89ef5222ae0f124f9ed44660e8f9b3b82f59",
+  "createdAt": "2026-11-09T14:36:00.597666+00:00",
+  "unitTestsPerNode": 41,
+  "nodes": [
+    "22.19.0",
+    "24.13.1"
+  ],
+  "artifact": {
+    "name": "dsh-person-memory-0.1.0-development.tgz",
+    "bytes": 72289,
+    "sha256": "bf91c10860a7f9387ea75b1792cb5e22e43fcc38de88670eb56f2e89bc41ab38"
+  },
+  "native": {
+    "passed": true,
+    "checks": [
+      "native-memory-bundle-and-owner-entry-are-ready",
+      "first-live-tool-write-and-unmentioned-recall-use-native-authentication",
+      "separate-person-sessions-and-operator-reads-stay-in-selected-scope",
+      "new-source-correction-replaces-the-current-view-without-erasing-its-history",
+      "all-native-owner-operations-refuse-non-owner-even-with-a-global-policy",
+      "forgetting-redacts-linked-sources-and-replay-does-not-regenerate-or-resurrect",
+      "owner-confirms-a-new-version-with-original-source-evidence",
+      "parallel-conversations-keep-memory-and-model-histories-separate",
+      "plain-chat-replies-before-a-blocked-memory-ingestion-is-acknowledged",
+      "native-config-reload-retains-accepted-data-and-forgetting-tombstones",
+      "disabled-memory-keeps-its-owner-entry-and-does-not-disable-chat",
+      "native-cli-removal-and-reinstallation-retain-memory-and-tombstones"
+    ],
+    "outputs": 14,
+    "installed": {
+      "dsh-qq-chat": 61,
+      "dsh-person-memory": 45
+    },
+    "normalShutdown": true,
+    "nativeAdapterRequests": 26,
+    "peakConcurrentRequests": 2,
+    "modelBackend": "controlled loopback Messages through the actual DSH native adapter",
+    "semanticQualityVerified": false
+  },
+  "web": {
+    "passed": true,
+    "checks": [
+      "owner-page-is-visible-with-disabled-runtime",
+      "invalid-settings-retain-the-owner-draft",
+      "service-enabled-and-real-store-seeded",
+      "missing-request-provider-refuses-model-tool-save",
+      "default-inspection-excludes-model-candidates",
+      "candidate-evidence-is-displayed-as-escaped-data",
+      "owner-acceptance-and-revalidated-page-download",
+      "forget-clears-visible-data-and-removes-source-linked-values",
+      "config-reload-retains-data-and-revision-bound-pagination",
+      "light-dark-and-narrow-owner-layout",
+      "disabling-memory-clears-the-inspector-and-retains-owner-entry"
+    ],
+    "installed": 45
+  },
+  "consumer": {
+    "passed": true,
+    "installedFilesVerified": 45,
+    "declarationFiles": 353,
+    "clientDeclarationFiles": 177,
+    "ancestorDependenciesBorrowed": false,
+    "strictDeclarationErrors": 0,
+    "runtimeSmoke": {
+      "passed": true,
+      "startedApplications": 0,
+      "openedDatabases": 0
+    },
+    "composition": {
+      "passed": true,
+      "accepted": 1,
+      "forgotten": true,
+      "realQqMessagesSent": 0
+    }
+  },
+  "realModelApiRequests": 0,
+  "realQqMessagesSent": 0,
+  "productionChanged": false,
+  "personaOrSkillsRead": false,
+  "protectedGroupDataRead": false,
+  "automaticPatrolEnabled": false,
+  "semanticRecallImplemented": false,
+  "contextInjectionImplemented": false,
+  "fullBackupRestoreImplemented": false
+}

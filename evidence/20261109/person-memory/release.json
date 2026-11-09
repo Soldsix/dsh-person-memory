@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "package": "dsh-person-memory",
+  "version": "0.1.0-development",
+  "sourceCommit": "2e1e89ef5222ae0f124f9ed44660e8f9b3b82f59",
+  "role": "native source-linked personal memory store and authenticated model tools",
+  "archive": "dsh-person-memory/artifacts/dsh-person-memory-0.1.0-development.tgz",
+  "sha256": "bf91c10860a7f9387ea75b1792cb5e22e43fcc38de88670eb56f2e89bc41ab38",
+  "archiveBytes": 72289,
+  "installedFiles": 45,
+  "unitTestsPerNode": 41,
+  "nativeChecks": 12,
+  "nativeAdapterRequests": 26,
+  "peakConcurrentRequests": 2,
+  "webChecks": 11,
+  "strictHostDeclarationInputs": 353,
+  "strictClientDeclarationInputs": 177,
+  "ancestorDependenciesBorrowed": false,
+  "ciRun": 42636026814,
+  "passedCiJobs": 7,
+  "jobs": [
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/Soldsix/dsh-person-memory/actions/runs/42636026814/job/129224288143",
+      "id": 129224288143,
+      "name": "native (ubuntu-latest, 24.x)",
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/Soldsix/dsh-person-memory/actions/runs/42636026814/job/129224288540",
+      "id": 129224288540,
+      "name": "package (ubuntu-latest, 24.x)",
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/Soldsix/dsh-person-memory/actions/runs/42636026814/job/129224288667",
+      "id": 129224288667,
+      "name": "web",
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/Soldsix/dsh-person-memory/actions/runs/42636026814/job/129224288672",
+      "id": 129224288672,
+      "name": "package (windows-latest, 22.19.0)",
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/Soldsix/dsh-person-memory/actions/runs/42636026814/job/129224288889",
+      "id": 129224288889,
+      "name": "package (ubuntu-latest, 22.19.0)",
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/Soldsix/dsh-person-memory/actions/runs/42636026814/job/129224288914",
+      "id": 129224288914,
+      "name": "package (windows-latest, 24.x)",
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/Soldsix/dsh-person-memory/actions/runs/42636026814/job/129224289014",
+      "id": 129224289014,
+      "name": "native (windows-latest, 24.x)",
+      "status": "completed"
+    }
+  ],
+  "ciUrl": "https://github.com/Soldsix/dsh-person-memory/actions/runs/42636026814",
+  "releaseUrl": "https://github.com/Soldsix/dsh-person-memory/releases/tag/v0.1.0-development",
+  "anonymousDownloadHashVerified": true,
+  "schemaVersionOfMemoryStore": 1,
+  "host": "DSH 0.2.2-rc.1 / native Node >=24.9; Node 22.19 is library compatibility evidence",
+  "realModelApiRequests": 0,
+  "realQqMessagesSent": 0,
+  "productionChanged": false,
+  "personaOrSkillsRead": false,
+  "protectedGroupDataRead": false,
+  "automaticPatrolEnabled": false,
+  "publicRegistryPublished": false,
+  "modelToolDisabledByDefault": true,
+  "sourceLinkedStatementsAreNotVerifiedFacts": true,
+  "fullMemoryCapabilityComplete": false,
+  "automaticSemanticExtractionImplemented": false,
+  "semanticRecallImplemented": false,
+  "contextInjectionImplemented": false,
+  "staleSessionRemovalImplemented": false,
+  "fullBackupRestoreImplemented": false,
+  "allCapabilitiesComplete": false,
+  "evidence": "dsh-person-memory/evidence/20261109/person-memory/release.json"
+}

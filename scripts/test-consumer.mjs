@@ -45,6 +45,10 @@ for(const path of inputFiles){
  const owned=relative(area,path),compiler=relative(compilerLib,path)
  assert.ok((!owned.startsWith('..')&&!isAbsolute(owned))||(!compiler.startsWith('..')&&!isAbsolute(compiler)),'Consumer borrowed an ancestor dependency')
 }
+const clientConsumer=join(attempt,'consumer-client.ts');await copyFile(join(root,'scripts','consumer-client-types.ts'),clientConsumer)
+const clientProgram=ts.createProgram([clientConsumer],compilerOptions,host),clientDiagnostics=ts.getPreEmitDiagnostics(clientProgram),clientInputs=clientProgram.getSourceFiles().map(file=>resolve(file.fileName))
+await writeFile(join(attempt,'client-type-diagnostics.txt'),ts.formatDiagnosticsWithColorAndContext(clientDiagnostics,{getCurrentDirectory:()=>area,getCanonicalFileName:file=>file,getNewLine:()=> '\n'}));assert.equal(clientDiagnostics.length,0,'Strict Client declaration check failed')
+for(const path of clientInputs){const owned=relative(area,path),compiler=relative(compilerLib,path);assert.ok((!owned.startsWith('..')&&!isAbsolute(owned))||(!compiler.startsWith('..')&&!isAbsolute(compiler)),'Client consumer borrowed an ancestor dependency')}
 await writeFile(join(attempt,'runtime.mjs'),`import assert from 'node:assert/strict'
 import {Config,name,MemoryError} from 'dsh-person-memory'
 import Control from 'dsh-person-memory/control'
@@ -54,5 +58,5 @@ console.log(JSON.stringify({passed:true,startedApplications:0,openedDatabases:0}
 `)
 const runtime=JSON.parse((await run([join(attempt,'runtime.mjs')])).trim());assert.equal(runtime.passed,true)
 await copyFile(join(root,'scripts','consumer-fixture.mjs'),join(attempt,'composition.mjs'));const composition=JSON.parse((await run([join(attempt,'composition.mjs')])).trim());assert.equal(composition.passed,true)
-const result={passed:true,installedFilesVerified:installed,declarationFiles:inputFiles.length,ancestorDependenciesBorrowed:false,strictDeclarationErrors:0,runtimeSmoke:runtime,composition,realModelApiRequests:0,realQqMessagesSent:0}
+const result={passed:true,installedFilesVerified:installed,declarationFiles:inputFiles.length,clientDeclarationFiles:clientInputs.length,ancestorDependenciesBorrowed:false,strictDeclarationErrors:0,runtimeSmoke:runtime,composition,realModelApiRequests:0,realQqMessagesSent:0}
 await writeFile(join(attempt,'result.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify({area,attempt,...result}))
