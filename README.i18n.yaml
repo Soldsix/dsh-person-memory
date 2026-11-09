@@ -1,0 +1,40 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write README.md
+/:
+  en: 39b6f8b0d53dbfac
+  zh: 79f0b4c7d952f516
+/dsh-person-memory:
+  en: 805836085ea073dc
+  zh: 8fc33e82ebdb36b9
+/dsh-person-memory/summary:
+  en: 70a5e8d8f76f6054
+  zh: 56440d630e1368be
+/dsh-person-memory/table-of-contents:
+  en: 41461f3a3131db1e
+  zh: e1fcde3d546a2d42
+/dsh-person-memory/install-and-compose:
+  en: eb89fc07c69ec001
+  zh: 46c860b62a8f1224
+/dsh-person-memory/identity-and-authority:
+  en: 8079419fd45af2da
+  zh: e02776f3de704bf4
+/dsh-person-memory/sources-and-revisions:
+  en: 5ae32f1d960ace2b
+  zh: 87bc5f3dc7460f95
+/dsh-person-memory/forgetting:
+  en: 973d59005c74d736
+  zh: c571a0648597316f
+/dsh-person-memory/native-model-tool:
+  en: 16030589033865a2
+  zh: 58a48d066ab556f2
+/dsh-person-memory/owner-interface:
+  en: 8b5a41ddefc3ba53
+  zh: b9c9674e4810eac7
+/dsh-person-memory/storage-and-lifecycle:
+  en: 7c7ea5fe38cc2dda
+  zh: 680e970a4d0f4013
+/dsh-person-memory/verification-and-limits:
+  en: 2460a6f9ea5769d8
+  zh: 884c0ce42b300c84

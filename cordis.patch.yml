@@ -1,0 +1,7 @@
+- insert:
+    - id: person-memory-settings
+      name: dsh-person-memory/control
+    - id: person-memory
+      name: dsh-person-memory
+      config:
+        enabled: false

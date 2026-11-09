@@ -1,0 +1,14 @@
+.personmemory-page { display: flex; flex-direction: column; gap: 16px; max-width: 780px; min-width: 0; padding: 4px 0 16px; color: var(--dsw-alias-label-primary); font-size: 13px; }
+.personmemory-page p { margin: 0; line-height: 1.6; }
+.personmemory-page form { display: flex; flex-direction: column; gap: 14px; padding: 16px; border: 1px solid var(--dsw-alias-border-l2); border-radius: 12px; }
+.personmemory-field { display: grid; grid-template-columns: minmax(160px, 1fr) minmax(160px, 1fr); gap: 8px 20px; align-items: center; }
+.personmemory-field input, .personmemory-field textarea { width: 100%; box-sizing: border-box; }
+.personmemory-field textarea { min-height: 72px; resize: vertical; color: inherit; background: transparent; border: 1px solid var(--dsw-alias-border-l2); border-radius: 6px; padding: 8px; }
+.personmemory-field small { display: block; margin-top: 4px; color: var(--dsw-alias-label-secondary); }
+.personmemory-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.personmemory-inspector { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.personmemory-inspector h3 { margin: 0; font-size: 15px; font-weight: 500; }
+.personmemory-record strong { font-weight: 500; }
+.personmemory-record { border: 1px solid var(--dsw-alias-border-l2); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 10px; overflow-wrap: anywhere; min-width: 0; }
+.personmemory-record blockquote { margin: 0; padding: 8px 12px; border-left: 2px solid var(--dsw-alias-border-l2); white-space: pre-wrap; color: var(--dsw-alias-label-secondary); }
+@media (max-width: 600px) { .personmemory-field { grid-template-columns: minmax(0, 1fr); gap: 8px; } .personmemory-page form { padding: 12px; } }
